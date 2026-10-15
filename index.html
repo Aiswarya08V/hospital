@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareFirst Hospital | Appointment Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; color: #333; }
+        header { background-color: #0077b6; color: white; padding: 20px; text-align: center; font-size: 26px; font-weight: bold; }
+        nav { display: flex; justify-content: center; background: #0096c7; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .section { margin-bottom: 30px; }
+        h2 { color: #0077b6; border-bottom: 2px solid #00b4d8; padding-bottom: 5px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0; }
+        .time-slot { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 4px; font-weight: bold; margin-top: 5px; }
+        .banner { background: #fee2e2; color: #991b1b; padding: 15px; border-radius: 6px; font-weight: bold; border-left: 5px solid #ef4444; }
+    </style>
+</head>
+<body>
+
+    <header>🏥 CareFirst Hospital Appointment Portal</header>
+    
+    <nav>
+        <a href="#doctors">Doctor Profiles</a>
+        <a href="#slots">Available Slots</a>
+        <a href="#announcements">Announcements</a>
+    </nav>
+
+    <div class="container">
+        <!-- Release Tracking Tag -->
+        <div style="text-align: right; margin-bottom: 15px;">
+            <span style="padding: 5px 10px; background: #10b981; color: white; border-radius: 4px; font-size: 14px;">Version: Stable (v1.0.0)</span>
+        </div>
+
+        <section id="doctors" class="section">
+            <h2>👨‍⚕️ Specialist Profiles</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Dr. Sarah Jenkins</h3>
+                    <p><strong>Specialization:</strong> Cardiology</p>
+                    <p>Consultation: Mon - Wed (09:00 AM - 01:00 PM)</p>
+                </div>
+                <div class="card">
+                    <h3>Dr. Michael Chen</h3>
+                    <p><strong>Specialization:</strong> Pediatrics</p>
+                    <p>Consultation: Thu - Sat (02:00 PM - 06:00 PM)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="slots" class="section">
+            <h2>📅 Available Appointment Slots</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>Cardiology - Slot A</h4>
+                    <span class="time-slot">Mon 10:30 AM</span> <span style="color:#10b981;">● Available</span>
+                </div>
+                <div class="card">
+                    <h4>Pediatrics - Slot B</h4>
+                    <span class="time-slot">Thu 03:15 PM</span> <span style="color:#10b981;">● Available</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="announcements" class="section">
+            <h2>📢 Hospital Announcements</h2>
+            <div class="banner">
+                Note: The Flu Vaccination Campaign runs throughout this week. Walk-ins are welcome from 8 AM to 4 PM.
+            </div>
+        </section>
+        
+        <!-- Modified Placement section added later -->
+        <div id="new-features"></div>
+    </div>
+
+</body>
+</html>
